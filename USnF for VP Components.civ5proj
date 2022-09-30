@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{f7634d81-5518-45d5-a686-6ecc50b5a0ec}</ProjectGuid>
+    <Name>(visual) USnF for VP Components</Name>
+    <Guid>a558047c-e8eb-4084-b30b-e6c7fb3d47ae</Guid>
+    <ModVersion>1</ModVersion>
+    <Stability>Stable</Stability>
+    <Teaser>This mod adds USnF support for Vox Populi.</Teaser>
+    <Description>This mod adds USnF support for Vox Populi.
+[NEWLINE]
+[NEWLINE]If you always play with [COLOR:225:180:90:255]Vox Populi[ENDCOLOR], I recommend you to get the full [COLOR:90:180:120:255]Unit Scaling and Formation for VP[ENDCOLOR] instead.
+[NEWLINE]This support file is only for those who are occasionally play with [COLOR:225:180:90:255]Vox Populi[ENDCOLOR] but also sometimes play with other mods that isn't support it.
+So then you just have to enable/disable this mod if you want.
+[NEWLINE]
+[NEWLINE]This mod includes support for additional units from:
+[NEWLINE][ICON_PLUS] More Unique Components for VP
+[NEWLINE][ICON_PLUS] Enlightenment Era
+[NEWLINE][ICON_PLUS] Enhanced Naval Warfare
+[NEWLINE][ICON_PLUS] Enhanced Air Warfare
+[NEWLINE]
+[NEWLINE]You can activate additional mod feature options that by editing the [COLOR:160:170:180:255]USnF-VP_Config.sql[ENDCOLOR] file
+    </Description>
+    <Authors>N.Core</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>USnF for VP Components</AssemblyName>
+    <RootNamespace>USnF for VP Components</RootNamespace>
+    <ModReferences>
+      <Association>
+        <Type>Mod</Type>
+        <Name>More Unique Components for VP</Name>
+        <Id>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Enlightenment Era (Vox Populi)</Name>
+        <Id>87b2deae-83cb-9b88-9017-79e741d3739c</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Enhanced Naval Warfare for Vox Populi</Name>
+        <Id>675ba5ec-dc5a-400f-9864-8170568d04e5</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Enhanced Air Warfare for Vox Populi</Name>
+        <Id>871da714-b2c6-49e9-8882-57489f501dba</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModReferences>
+    <ReloadUnitSystem>true</ReloadUnitSystem>
+    <ReloadStrategicViewSystem>false</ReloadStrategicViewSystem>
+    <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>USnF-VP_CONFIG.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/Vox Populi Components/USnF-BASE_VP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/Vox Populi Components/USnF-MUCfVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/Vox Populi Components/USnF-EEVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/Other Mod Components/USnF-ENW.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/Other Mod Components/USnF-EAW.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-2b-AIRSPEED_VP.sql</FileName>
+      </Action>
+    </ModActions>
+    <ModDependencies>
+      <Association xmlns="">
+        <Type>Mod</Type>
+        <Name>Unit Scaling and Formation</Name>
+        <Id>9f801bd1-a762-4fa6-b2d0-b3245c8fb464</Id>
+        <MinVersion>8</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association xmlns="">
+        <Type>Mod</Type>
+        <Name>Vox Populi</Name>
+        <Id>8411a7a8-dad3-4622-a18e-fcc18324c799</Id>
+        <MinVersion>15</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="SQL\USnF-1-SCALE\Other Mod Components\USnF-EAW.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\Other Mod Components\USnF-ENW.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\Vox Populi Components\USnF-BASE_VP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\Vox Populi Components\USnF-EEVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\Vox Populi Components\USnF-MUCfVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-2b-AIRSPEED_VP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="USnF-VP_CONFIG.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQL" />
+    <Folder Include="SQL\USnF-1-SCALE" />
+    <Folder Include="SQL\USnF-1-SCALE\Other Mod Components" />
+    <Folder Include="SQL\USnF-1-SCALE\Vox Populi Components" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

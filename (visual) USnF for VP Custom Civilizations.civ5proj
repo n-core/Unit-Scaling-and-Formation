@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{6e91f789-ec7f-404f-8cd0-d26f647e5776}</ProjectGuid>
+    <Name>(visual) USnF for VP Custom Civilizations</Name>
+    <Guid>6c2985af-6d9e-4db8-b04e-8a3394ce1c6d</Guid>
+    <ModVersion>6</ModVersion>
+    <Stability>Stable</Stability>
+    <Teaser>This mod adds USnF support for additional units from custom civilizations for [COLOR:225:180:90:255]Vox Populi[ENDCOLOR].</Teaser>
+    <Description>This mod adds USnF support for additional units from custom civilizations for [COLOR:225:180:90:255]Vox Populi[ENDCOLOR].
+[NEWLINE]
+[NEWLINE]This mod includes support for units for all custom civs listed on References.</Description>
+    <Authors>N.Core</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>(visual) USnF for Custom Civilizations</AssemblyName>
+    <RootNamespace>(visual) USnF for Custom Civilizations</RootNamespace>
+    <ModReferences>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Vox Populi</Name>
+        <Id>8411a7a8-dad3-4622-a18e-fcc18324c799</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Cambodian Civilization for VP</Name>
+        <Id>7b2d759e-3366-41c7-8e0c-b4ebfe1c79g2</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Colonialist Legacies' - Phillipine Republic for Vox Populi</Name>
+        <Id>2b5ad645-8094-4ed7-a488-1e49eb9277aa</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Colonialist Legacies' Canadian Dominion for VP</Name>
+        <Id>8562c016-f5bb-40f1-b37e-d3b40d3fg13e</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Colonialist Legacies' Tlingit for VP</Name>
+        <Id>bb769714-1243-4d42-9c13-bdbb55405064</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>DMS' Civilizations - Corsica (Pasquale Paoli) for VP</Name>
+        <Id>55abc424-63ea-4858-a3e5-15e8cca4890b</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>GH's Ainu People - Shakushain for VP</Name>
+        <Id>3499cc3d-2073-42c9-9bf0-f39db982e741</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Leugi's Israel for VP</Name>
+        <Id>35e27828-cf22-4aec-b087-08169fa4e430</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Manchus for Vox Populi</Name>
+        <Id>clqm1mt6-al70-p2m7-0dm7-1g5oc5o39f34</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>GH's Louisiana - Joseph Beausoleil Broussard for VP</Name>
+        <Id>3ea46c4f-6e13-46bf-ba28-71a3ffa85b53</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>GH's Scotland - Robert I Bruce for VP</Name>
+        <Id>a6fd44de-5fe5-45b1-a2b8-77a69e910182</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Hinin's Hisatsinom (Po'Pay) for Vox Populi</Name>
+        <Id>9c2470ae-57d8-4dc8-ba30-739b9d678410</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Hinin's Imazighen (Dihya al-Kahina) for VP</Name>
+        <Id>01f969e2-5ebc-40df-b01d-deb85b0603c9</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Hoop Thrower's Tehuelche - Maria the Elder for VP</Name>
+        <Id>568896cc-93a5-420f-8167-4a9965563632</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>LastSword's Viet Nam for VP</Name>
+        <Id>2f41f1a3-a28d-4a4f-b236-0e16159b7b63</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Tomatekh's Benin (Ewuare) for VP</Name>
+        <Id>7c89ec77-8cd0-44af-b308-925b9ccf0377</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Pineappledan's Phoenician Civilization</Name>
+        <Id>7762c016-f5bb-40f1-b37e-d3b40d4gh23e</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>MC and LITE's Nubia for VP</Name>
+        <Id>4bd78158-67ce-4bd5-9b43-c7d4b1503a96</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Goths for Vox Populi</Name>
+        <Id>161f4dde-bbb8-41d2-8999-30250d9ba231</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Pineappledan's Chola for Vox Populi</Name>
+        <Id>bb769714-1243-4d42-9c13-bdbb37925449</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Tomatekh's Sumer for VP</Name>
+        <Id>7dbedfbe-cce4-49cd-a2bc-3507e38f4bd4</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Tomatekh's Timurids for VP</Name>
+        <Id>cc3e1671-2832-40dc-9bfd-8e053d3b76b2</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>MC's Greece/Macedon Split for Vox Populi</Name>
+        <Id>d4d41747-f4f3-4861-9346-928634c8c68f</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>JFD's Kingdom of Norway (Haakon IV) for VP</Name>
+        <Id>dfc391e1-b126-40bb-8125-2fbafca9c576</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Colonialist Legacies' Inuit for VP</Name>
+        <Id>dcdaabd2-b224-4680-bdc0-d8692a1a1249</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>JFD's Civilizations - United States of America (Roosevelt) for VP</Name>
+        <Id>c118bb07-4305-4fe1-a47a-e050da421cb6</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>JFD's Civilizations - Papal States (Pius IX) for Vox Populi</Name>
+        <Id>42c4728e-4544-4520-8488-4bb430e27e34</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>SMAN's Duchy of Brittany - Anne De Bretagne for VP</Name>
+        <Id>17304572-5735-44c1-a981-29be1ff401b6</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Kushan Empire for VP</Name>
+        <Id>4abc16dc-5010-47d1-af6a-7d51a2674a35</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>JFD's Civilizations - Japan (Tojo) for Vox Populi</Name>
+        <Id>f5d1b4e6-a48d-4311-9af3-c59ce1c11d0e</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>JFD's Civilizations - Japan (Meiji) for Vox Populi</Name>
+        <Id>e2474689-763b-4adf-a4e1-ff981818f7c6</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>JFD's Civilizations - Great Britain (Victoria) for Vox Populi</Name>
+        <Id>c723cd99-1755-4ec6-a89c-2f565bae1297</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>JFD's Civilizations - Prussia (Frederick) for Vox Populi</Name>
+        <Id>a08a3228-022a-4681-b1a1-aab5dcccb857</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModReferences>
+    <ReloadUnitSystem>true</ReloadUnitSystem>
+    <ModDependencies>
+      <Association xmlns="">
+        <Type>Mod</Type>
+        <Name>Unit Scaling and Formation</Name>
+        <Id>9f801bd1-a762-4fa6-b2d0-b3245c8fb464</Id>
+        <MinVersion>8</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-CL_CanadaDominionVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-CL_InuitVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-CL_PhillippinesVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-CL_TlingitVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-DMS_CorsicaVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-GH_AinuPeopleVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-GH_LouisianaVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-GH_ScotlandVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Hinin_HisatsinomVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Hinin_ImazighenVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-HoopThrower_TehuelcheVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-InkAxis_KushanVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-JFD_AmericaRooseveltVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-JFD_GBritainVictoriaVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-JFD_JapanMeijiVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-JFD_JapanTojoVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-JFD_NorwayVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-JFD_PapalStatesVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-JFD_PrussiaVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-LastSword_VietnamVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Leugi_IsraelVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-MC_NubiaVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-MC_MacedonVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Pdan_CambodiaVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Pdan_CholaVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Pdan_GothsVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Pdan_ManchusVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Pdan_PhoeniciaVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-SMAN_BritannyVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Tomatekh_BeninVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Tomatekh_SumerVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Tomatekh_TimuridsVP.sql</FileName>
+      </Action>
+    </ModActions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-CL_CanadaDominionVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-CL_InuitVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-CL_PhillippinesVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-CL_TlingitVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-DMS_CorsicaVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-GH_AinuPeopleVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-GH_LouisianaVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-GH_ScotlandVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Hinin_HisatsinomVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Hinin_ImazighenVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-HoopThrower_TehuelcheVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-InkAxis_KushanVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-JFD_AmericaRooseveltVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-JFD_GBritainVictoriaVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-JFD_JapanMeijiVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-JFD_JapanTojoVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-JFD_NorwayVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-JFD_PapalStatesVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-JFD_PrussiaVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-LastSword_VietnamVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Leugi_IsraelVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-MC_MacedonVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-MC_NubiaVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Pdan_CambodiaVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Pdan_CholaVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Pdan_GothsVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Pdan_ManchusVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Pdan_PhoeniciaVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-SMAN_BritannyVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Tomatekh_BeninVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Tomatekh_SumerVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Tomatekh_TimuridsVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\UnitFormations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQL" />
+    <Folder Include="SQL\USnF-1-SCALE" />
+    <Folder Include="SQL\USnF-1-SCALE\VP Custom Civilizations" />
+    <Folder Include="XML" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>
