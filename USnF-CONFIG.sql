@@ -49,7 +49,7 @@ There are:
 3 = Single Unit Graphics scaling style
 */
 
-INSERT INTO COMMUNITY (Type, Value)
+INSERT INTO USnF_Config (Type, Value)
 VALUES ('USnF_LAND', 1);
 
 /*
@@ -64,7 +64,7 @@ There are:
 3 = Single Unit Graphics scaling style
 */
 
-INSERT INTO COMMUNITY (Type, Value)
+INSERT INTO USnF_Config (Type, Value)
 VALUES ('USnF_SEA', 1);
 
 /*
@@ -80,7 +80,7 @@ There are:
 4 = Enhanced Air Warfare scaling style
 */
 
-INSERT INTO COMMUNITY (Type, Value)
+INSERT INTO USnF_Config (Type, Value)
 VALUES ('USnF_AIR', 1);
 
 /*
@@ -109,27 +109,27 @@ There are:
 3 = Use global scaling multiplier
 */
 
-INSERT INTO COMMUNITY (Type, Value)
+INSERT INTO USnF_Config (Type, Value)
 VALUES ('USnF_SCALEMULT', 1);
 
 ------------------------------ GLOBAL SCALING MULTIPLIER ------------------------------
 UPDATE ArtDefine_USnFScaleMultiplier SET USnF_ScaleMultiplier = 1.00 --set your multiplier value
-WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SCALEMULT' AND (Value = 3));
+WHERE EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SCALEMULT' AND (Value = 3));
 ---------------------------------------------------------------------------------------
 -------------------------- PER-UNIT DOMAIN SCALING MULTIPLIER -------------------------
 --Scaling multiplier for land units
 UPDATE ArtDefine_USnFScaleMultiplier SET USnF_ScaleMultiplier = 1.15 --set your multiplier value
-WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SCALEMULT' AND (Value = 2))
+WHERE EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SCALEMULT' AND (Value = 2))
 AND USnF_Domain = 'LAND';
 
 --Scaling multiplier for sea units
 UPDATE ArtDefine_USnFScaleMultiplier SET USnF_ScaleMultiplier = 1.10 --set your multiplier value
-WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SCALEMULT' AND (Value = 2))
+WHERE EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SCALEMULT' AND (Value = 2))
 AND USnF_Domain = 'SEA';
 
 --Scaling multiplier for air units
 UPDATE ArtDefine_USnFScaleMultiplier SET USnF_ScaleMultiplier = 1.05 --set your multiplier value
-WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SCALEMULT' AND (Value = 2))
+WHERE EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SCALEMULT' AND (Value = 2))
 AND USnF_Domain = 'AIR';
 ---------------------------------------------------------------------------------------
 
@@ -145,8 +145,8 @@ Description:
 4 = R.E.D. speed
 */
 
-INSERT INTO COMMUNITY (Type, Value)
-VALUES ('USnF_AIRSPEED', 1);
+INSERT INTO USnF_Config (Type, Value)
+VALUES ('USnF_AIRSPEED', 0);
 
 --==================================================================================================================
 -- MOD SETUP (DO NOT CHANGE ANY VALUE!)
@@ -156,59 +156,59 @@ VALUES ('USnF_AIRSPEED', 1);
 UPDATE ArtDefine_USnFSetup
 SET USnF_Type = 'RED'
 WHERE USnF_Domain = 'LAND'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 1);
+AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 1);
 
 UPDATE ArtDefine_USnFSetup
 SET USnF_Type = 'RED'
 WHERE USnF_Domain = 'SEA'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 1);
+AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 1);
 
 UPDATE ArtDefine_USnFSetup
 SET USnF_Type = 'RED'
 WHERE USnF_Domain = 'AIR'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 1);
+AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 1);
 
 -- If you select the Reduced Unit Graphics scaling style
 UPDATE ArtDefine_USnFSetup
 SET USnF_Type = 'RUG'
 WHERE USnF_Domain = 'LAND'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 2);
+AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 2);
 
 UPDATE ArtDefine_USnFSetup
 SET USnF_Type = 'RUG'
 WHERE USnF_Domain = 'SEA'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 2);
+AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 2);
 
 UPDATE ArtDefine_USnFSetup
 SET USnF_Type = 'RUG'
 WHERE USnF_Domain = 'AIR'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 2);
+AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 2);
 
 -- If you choose the Single Unit Graphics scaling style
 UPDATE ArtDefine_USnFSetup
 SET USnF_Type = 'SUG'
 WHERE USnF_Domain = 'LAND'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 3);
+AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 3);
 
 UPDATE ArtDefine_USnFSetup
 SET USnF_Type = 'SUG'
 WHERE USnF_Domain = 'SEA'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 3);
+AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 3);
 
 UPDATE ArtDefine_USnFSetup
 SET USnF_Type = 'SUG'
 WHERE USnF_Domain = 'AIR'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 3);
+AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 3);
 
 -- If you select the Enhanced Air Warfare scaling style for air units
 UPDATE ArtDefine_USnFSetup
 SET USnF_Type = 'EAW'
 WHERE USnF_Domain = 'AIR'
-AND EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 4);
+AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 4);
 
 CREATE TRIGGER USnF_ScalingMultiplierEnabled
 AFTER INSERT ON ArtDefine_USnF
-WHEN NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SCALEMULT' AND (Value = 0 OR Value = 1))
+WHEN NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SCALEMULT' AND (Value = 0 OR Value = 1))
 BEGIN
 
     UPDATE ArtDefine_USnF
@@ -219,7 +219,7 @@ END;
 
 CREATE TRIGGER USnF_ScalingMultiplierDisabled
 AFTER INSERT ON ArtDefine_USnF
-WHEN EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SCALEMULT' AND Value = 0)
+WHEN EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SCALEMULT' AND Value = 0)
 BEGIN
 
     UPDATE ArtDefine_USnF

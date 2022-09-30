@@ -40,51 +40,51 @@
 --  Custom scaling for units
         --  Land units
         REPLACE INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-                SELECT DISTINCT USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
+                SELECT DISTINCT USnF_UnitMemberInfo, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
                 FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix
+                        Type = USnF_UnitMemberInfo
                         AND USnF_Scale > 0
                         --For domain land unit
                         AND USnF_Domain = 'LAND'
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'LAND')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitMemberInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 0);
 
         --  Sea units
         REPLACE INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-                SELECT DISTINCT USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
+                SELECT DISTINCT USnF_UnitMemberInfo, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
                 FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix
+                        Type = USnF_UnitMemberInfo
                         AND USnF_Scale > 0
                         --For domain sea unit
                         AND USnF_Domain = 'SEA'
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'SEA')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitMemberInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 0);
 
         --  Air units
         REPLACE INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-                SELECT DISTINCT USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
+                SELECT DISTINCT USnF_UnitMemberInfo, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
                 FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix
+                        Type = USnF_UnitMemberInfo
                         AND USnF_Scale > 0
                         --For domain air unit
                         AND USnF_Domain = 'AIR'
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'AIR')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitMemberInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 0);
 
 -----------------------------------------------------------------------------
 -- Formation setup
@@ -93,51 +93,51 @@
 --  Custom formation for units
         --  Land units
         REPLACE INTO ArtDefine_UnitInfos (Type, DamageStates, Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex)
-                SELECT DISTINCT USnF_ArtDefineUnit || USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
+                SELECT DISTINCT USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
                 FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnit || USnF_UnitInfo
+                        Type = USnF_UnitInfo
                         AND USnF_Formation NOT NULL
                         --For domain land unit
                         AND USnF_Domain = 'LAND'
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'LAND')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 0);
 
         --  Sea units
         REPLACE INTO ArtDefine_UnitInfos (Type, DamageStates, Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex)
-                SELECT DISTINCT USnF_ArtDefineUnit || USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
+                SELECT DISTINCT USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
                 FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnit || USnF_UnitInfo
+                        Type = USnF_UnitInfo
                         AND USnF_Formation NOT NULL
                         --For domain sea unit
                         AND USnF_Domain = 'SEA'
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'SEA')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 0);
 
         -- Air units
         REPLACE INTO ArtDefine_UnitInfos (Type, DamageStates, Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex)
-                SELECT DISTINCT USnF_ArtDefineUnit || USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
+                SELECT DISTINCT USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
                 FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnit || USnF_UnitInfo
+                        Type = USnF_UnitInfo
                         AND USnF_Formation NOT NULL
                         --For domain air unit
                         AND USnF_Domain = 'AIR'
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'AIR')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 0);
 
 -----------------------------------------------------------------------------
 --  Number of Unit Member setup
@@ -147,7 +147,7 @@
         --  Land units 
         DELETE  FROM ArtDefine_UnitInfoMemberInfos
                 WHERE UnitInfoType
-                IN (    SELECT USnF_ArtDefineUnit || USnF_UnitInfo
+                IN (    SELECT USnF_UnitInfo
                         FROM ArtDefine_USnF
                         WHERE USnF_NumMembers > -1
                         --For domain land unit
@@ -155,13 +155,13 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'LAND'))
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 0);
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 0);
 
         --  Sea units 
         DELETE  FROM ArtDefine_UnitInfoMemberInfos
                 WHERE UnitInfoType
-                IN (    SELECT USnF_ArtDefineUnit || USnF_UnitInfo
+                IN (    SELECT USnF_UnitInfo
                         FROM ArtDefine_USnF
                         WHERE USnF_NumMembers > -1
                         --For domain sea unit
@@ -169,13 +169,13 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'SEA'))
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 0);
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 0);
 
         --  Air units 
         DELETE  FROM ArtDefine_UnitInfoMemberInfos
                 WHERE UnitInfoType
-                IN (    SELECT USnF_ArtDefineUnit || USnF_UnitInfo
+                IN (    SELECT USnF_UnitInfo
                         FROM ArtDefine_USnF
                         WHERE USnF_NumMembers > -1
                         --For domain air unit
@@ -183,13 +183,13 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'AIR'))
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 0);
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 0);
 
 --  Insertion for base units
         --  Number of member for land units
         INSERT  INTO ArtDefine_UnitInfoMemberInfos (UnitInfoType, UnitMemberInfoType, NumMembers)
-                SELECT USnF_ArtDefineUnit || USnF_UnitInfo, USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_NumMembers
+                SELECT USnF_UnitInfo, USnF_UnitMemberInfo, USnF_NumMembers
                 FROM ArtDefine_USnF
                 WHERE USnF_NumMembers > -1
                 --For domain land unit
@@ -197,12 +197,12 @@
                 --Based on what type you choose
                 AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'LAND')
                 --Make sure that unit exists
-                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 0);
+                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 0);
 
         --  Number of member for sea units
         INSERT  INTO ArtDefine_UnitInfoMemberInfos (UnitInfoType, UnitMemberInfoType, NumMembers)
-                SELECT USnF_ArtDefineUnit || USnF_UnitInfo, USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_NumMembers
+                SELECT USnF_UnitInfo, USnF_UnitMemberInfo, USnF_NumMembers
                 FROM ArtDefine_USnF
                 WHERE USnF_NumMembers > -1
                 --For domain sea unit
@@ -210,12 +210,12 @@
                 --Based on what type you choose
                 AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'SEA')
                 --Make sure that unit exists
-                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 0);
+                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 0);
 
         --  Number of member for air units
         INSERT  INTO ArtDefine_UnitInfoMemberInfos (UnitInfoType, UnitMemberInfoType, NumMembers)
-                SELECT USnF_ArtDefineUnit || USnF_UnitInfo, USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_NumMembers
+                SELECT USnF_UnitInfo, USnF_UnitMemberInfo, USnF_NumMembers
                 FROM ArtDefine_USnF
                 WHERE USnF_NumMembers > -1
                 --For domain air unit
@@ -223,8 +223,8 @@
                 --Based on what type you choose
                 AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'AIR')
                 --Make sure that unit exists
-                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 0);
+                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 0);
 
 -----------------------------------------------------------------------------
 --  Compatibility setup for custom mods
@@ -267,10 +267,10 @@
 --  Custom scaling for custom units
         --  Land units
         REPLACE INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-                SELECT DISTINCT USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
+                SELECT DISTINCT USnF_UnitMemberInfo, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
                 FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix
+                        Type = USnF_UnitMemberInfo
                         AND USnF_Scale > 0
                         --For domain land unit
                         AND USnF_Domain = 'LAND'
@@ -279,16 +279,16 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'LAND')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitMemberInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 0);
 
         --  Sea units
         REPLACE INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-                SELECT DISTINCT USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
+                SELECT DISTINCT USnF_UnitMemberInfo, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
                 FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix
+                        Type = USnF_UnitMemberInfo
                         AND USnF_Scale > 0
                         --For domain sea unit
                         AND USnF_Domain = 'SEA'
@@ -297,16 +297,16 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'SEA')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitMemberInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 0);
 
         --  Air units
         REPLACE INTO ArtDefine_UnitMemberInfos (Type, Scale, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag)
-                SELECT DISTINCT USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
+                SELECT DISTINCT USnF_UnitMemberInfo, USnF_Scale * USnF_ScaleMultiplier, ZOffset, Domain, Model, MaterialTypeTag, MaterialTypeSoundOverrideTag
                 FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix
+                        Type = USnF_UnitMemberInfo
                         AND USnF_Scale > 0
                         --For domain air unit
                         AND USnF_Domain = 'AIR'
@@ -315,9 +315,9 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'AIR')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitMemberInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitMemberInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 0);
 
 -----------------------------------------------------------------------------
 -- Formation setup
@@ -326,10 +326,10 @@
 --  Custom formation for custom units
         -- Land units
         REPLACE INTO ArtDefine_UnitInfos (Type, DamageStates, Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex)
-                SELECT DISTINCT USnF_ArtDefineUnit || USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
+                SELECT DISTINCT USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
                 FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnit || USnF_UnitInfo
+                        Type = USnF_UnitInfo
                         AND USnF_Formation NOT NULL
                         --For domain land unit
                         AND USnF_Domain = 'LAND'
@@ -338,16 +338,16 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'LAND')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 0);
 
         -- Sea units
         REPLACE INTO ArtDefine_UnitInfos (Type, DamageStates, Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex)
-                SELECT DISTINCT USnF_ArtDefineUnit || USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
+                SELECT DISTINCT USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
                 FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnit || USnF_UnitInfo
+                        Type = USnF_UnitInfo
                         AND USnF_Formation NOT NULL
                         --For domain sea unit
                         AND USnF_Domain = 'SEA'
@@ -356,16 +356,16 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'SEA')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 0);
 
         -- Air units
         REPLACE INTO ArtDefine_UnitInfos (Type, DamageStates, Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex)
-                SELECT DISTINCT USnF_ArtDefineUnit || USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
+                SELECT DISTINCT USnF_UnitInfo, DamageStates, USnF_Formation, UnitFlagAtlas, UnitFlagIconOffset, IconAtlas, PortraitIndex
                 FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF
                 ON (
-                        Type = USnF_ArtDefineUnit || USnF_UnitInfo
+                        Type = USnF_UnitInfo
                         AND USnF_Formation NOT NULL
                         --For domain air unit
                         AND USnF_Domain = 'AIR'
@@ -374,9 +374,9 @@
                         --Based on what type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'AIR')
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
                 )
-                WHERE NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 0);
+                WHERE NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 0);
 
 -----------------------------------------------------------------------------
 --  Number of Unit Member setup
@@ -386,7 +386,7 @@
         --  Land units 
         DELETE  FROM ArtDefine_UnitInfoMemberInfos
                 WHERE UnitInfoType
-                IN (    SELECT USnF_ArtDefineUnit || USnF_UnitInfo
+                IN (    SELECT USnF_UnitInfo
                         FROM ArtDefine_USnF
                         WHERE USnF_NumMembers > -1
                         --For domain land unit
@@ -396,13 +396,13 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'LAND'))
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 0);
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 0);
 
         --  Sea units 
         DELETE  FROM ArtDefine_UnitInfoMemberInfos
                 WHERE UnitInfoType
-                IN (    SELECT USnF_ArtDefineUnit || USnF_UnitInfo
+                IN (    SELECT USnF_UnitInfo
                         FROM ArtDefine_USnF
                         WHERE USnF_NumMembers > -1
                         --For domain sea unit
@@ -412,13 +412,13 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'SEA'))
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 0);
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 0);
 
         --  Air units 
         DELETE  FROM ArtDefine_UnitInfoMemberInfos
                 WHERE UnitInfoType
-                IN (    SELECT USnF_ArtDefineUnit || USnF_UnitInfo
+                IN (    SELECT USnF_UnitInfo
                         FROM ArtDefine_USnF
                         WHERE USnF_NumMembers > -1
                         --For domain air unit
@@ -428,13 +428,13 @@
                         --Based on what scaling type you choose
                         AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'AIR'))
                         --Make sure that unit exists
-                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 0);
+                        AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 0);
 
 --  Insertion for custom units
         --  Number of member for land units
         INSERT  INTO ArtDefine_UnitInfoMemberInfos (UnitInfoType, UnitMemberInfoType, NumMembers)
-                SELECT USnF_ArtDefineUnit || USnF_UnitInfo, USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_NumMembers
+                SELECT USnF_UnitInfo, USnF_UnitMemberInfo, USnF_NumMembers
                 FROM ArtDefine_USnF
                 WHERE USnF_NumMembers > -1
                 --For domain land unit
@@ -444,12 +444,12 @@
                 --Based on what type you choose
                 AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'LAND')
                 --Make sure that unit exists
-                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_LAND' AND Value = 0);
+                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_LAND' AND Value = 0);
 
         --  Number of member for sea units
         INSERT  INTO ArtDefine_UnitInfoMemberInfos (UnitInfoType, UnitMemberInfoType, NumMembers)
-                SELECT USnF_ArtDefineUnit || USnF_UnitInfo, USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_NumMembers
+                SELECT USnF_UnitInfo, USnF_UnitMemberInfo, USnF_NumMembers
                 FROM ArtDefine_USnF
                 WHERE USnF_NumMembers > -1
                 --For domain land unit
@@ -459,12 +459,12 @@
                 --Based on what type you choose
                 AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'SEA')
                 --Make sure that unit exists
-                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_SEA' AND Value = 0);
+                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SEA' AND Value = 0);
 
         --  Number of member for air units
         INSERT  INTO ArtDefine_UnitInfoMemberInfos (UnitInfoType, UnitMemberInfoType, NumMembers)
-                SELECT USnF_ArtDefineUnit || USnF_UnitInfo, USnF_ArtDefineUnitMember || USnF_UnitMemberInfo || USnF_MemSuffix, USnF_NumMembers
+                SELECT USnF_UnitInfo, USnF_UnitMemberInfo, USnF_NumMembers
                 FROM ArtDefine_USnF
                 WHERE USnF_NumMembers > -1
                 --For domain land unit
@@ -474,7 +474,7 @@
                 --Based on what type you choose
                 AND USnF_Type = (SELECT USnF_Type FROM ArtDefine_USnFSetup WHERE USnF_Domain = 'AIR')
                 --Make sure that unit exists
-                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON (Type = USnF_ArtDefineUnit || USnF_UnitInfo))
-                AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type = 'USnF_AIR' AND Value = 0);
+                AND EXISTS (SELECT Type FROM ArtDefine_UnitInfos INNER JOIN ArtDefine_USnF ON Type = USnF_UnitInfo)
+                AND NOT EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AIR' AND Value = 0);
 
         END;
