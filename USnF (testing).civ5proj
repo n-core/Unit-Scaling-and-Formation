@@ -13,8 +13,8 @@
 [NEWLINE]This mod affects the visual scale and formation of units in gameplay.
 [NEWLINE]Inspired by R.E.D. Modpack by Gedemon, but without ethnic diversity unit model overhaul.
 [NEWLINE]
-[NEWLINE]You can choose which type of scaling you want by editing the [COLOR:160:170:180:255]USnF-Config.sql[ENDCOLOR] file.
-[NEWLINE]You can also activate additional mod feature options that by editing the [COLOR:160:170:180:255]USnF-VP_Config.sql[ENDCOLOR] file
+[NEWLINE]You can choose which type of scaling you want by editing the [COLOR:160:170:180:255]USnF-CONFIG.sql[ENDCOLOR] file.
+[NEWLINE]You can also activate additional mod feature options that by editing the [COLOR:160:170:180:255]USnF-VP_CONFIG.sql[ENDCOLOR] file
 [NEWLINE]
 [NEWLINE]Should be saved game compatible since it's only a visual mod.</Description>
     <Authors>N.Core</Authors>
