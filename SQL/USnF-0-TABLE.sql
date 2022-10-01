@@ -27,9 +27,7 @@ CREATE TABLE IF NOT EXISTS  ArtDefine_USnF (
 							USnF_Scale FLOAT DEFAULT 0, 
 							USnF_NumMembers INTEGER DEFAULT -1, 
 							USnF_Formation TEXT DEFAULT NULL, 
-							USnF_ScaleMultiplier FLOAT DEFAULT 1);--,
-							--FOREIGN KEY('USnF_UnitInfo') REFERENCES ArtDefine_UnitInfos('Type'),
-							--FOREIGN KEY('USnF_UnitMemberInfo') REFERENCES ArtDefine_UnitMemberInfos('Type'));
+							USnF_ScaleMultiplier FLOAT DEFAULT 1);
 
 /*
 	Type				=	Specify what type of rescaling you make for the unit.
