@@ -7,11 +7,11 @@
     <Guid>a558047c-e8eb-4084-b30b-e6c7fb3d47ae</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Stable</Stability>
-    <Teaser>This mod adds USnF support for Vox Populi.</Teaser>
-    <Description>This mod adds USnF support for Vox Populi.
+    <Teaser>This mod adds USnF support for Vox Populi and its components.</Teaser>
+    <Description>This mod adds USnF support for Vox Populi and its components.
 [NEWLINE]
-[NEWLINE]If you always play with [COLOR:225:180:90:255]Vox Populi[ENDCOLOR], I recommend you to get the full [COLOR:90:180:120:255]Unit Scaling and Formation for VP[ENDCOLOR] instead.
-[NEWLINE]This support file is only for those who are occasionally play with [COLOR:225:180:90:255]Vox Populi[ENDCOLOR] but also sometimes play with other mods that isn't support it.
+[NEWLINE]If you always playing with [COLOR:250:220:30:255]Vox Populi[ENDCOLOR], I recommend you to get the full [COLOR:90:200:160:255]Unit Scaling and Formation for VP[ENDCOLOR] instead.
+[NEWLINE]This support file is only for those who are occasionally play with [COLOR:250:220:30:255]Vox Populi[ENDCOLOR] but also sometimes play with other mods that isn't supporting it.
 So then you just have to enable/disable this mod if you want.
 [NEWLINE]
 [NEWLINE]This mod includes support for additional units from:
@@ -20,8 +20,7 @@ So then you just have to enable/disable this mod if you want.
 [NEWLINE][ICON_PLUS] Enhanced Naval Warfare
 [NEWLINE][ICON_PLUS] Enhanced Air Warfare
 [NEWLINE]
-[NEWLINE]You can activate additional mod feature options that by editing the [COLOR:160:170:180:255]USnF-VP_Config.sql[ENDCOLOR] file
-    </Description>
+[NEWLINE]You can activate additional mod feature options that by editing the [COLOR:160:170:180:255]USnF-VP_CONFIG.sql[ENDCOLOR] file</Description>
     <Authors>N.Core</Authors>
     <SpecialThanks>
     </SpecialThanks>

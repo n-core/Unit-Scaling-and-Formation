@@ -16,7 +16,7 @@
 [NEWLINE][ICON_BULLET] Reduced Unit Graphics
 [NEWLINE][ICON_BULLET] Single Unit Graphics
 [NEWLINE]
-[NEWLINE]This mod already contains support for [COLOR:225:180:90:255]Vox Populi[ENDCOLOR], so you don't need to enable the additional VP support file.
+[NEWLINE]This mod already contains support for [COLOR:250:220:30:255]Vox Populi[ENDCOLOR], so you don't need to enable the additional VP support file.
 [NEWLINE]
 [NEWLINE]This mod includes support for additional units from:
 [NEWLINE][ICON_PLUS] More Unique Components for VP
@@ -24,8 +24,8 @@
 [NEWLINE][ICON_PLUS] Enhanced Naval Warfare
 [NEWLINE][ICON_PLUS] Enhanced Air Warfare
 [NEWLINE]
-[NEWLINE]You can choose which type of scaling you want by editing the [COLOR:160:170:180:255]USnF-Config.sql[ENDCOLOR] file.
-[NEWLINE]You can also activate additional mod feature options that by editing the [COLOR:160:170:180:255]USnF-VP_Config.sql[ENDCOLOR] file
+[NEWLINE]You can choose which type of scaling you want by editing the [COLOR:160:170:180:255]USnF-CONFIG.sql[ENDCOLOR] file.
+[NEWLINE]You can also activate additional mod feature options that by editing the [COLOR:160:170:180:255]USnF-VP_CONFIG.sql[ENDCOLOR] file
 [NEWLINE]
 [NEWLINE]Should be saved game compatible since it's only a visual mod.</Description>
     <Authors>N.Core</Authors>
