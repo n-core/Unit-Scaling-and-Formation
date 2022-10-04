@@ -48,7 +48,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
         --	SUPERCARRIER
             (   'ART_DEF_UNIT_SUPERCARRIER',        'ART_DEF_UNIT_MEMBER_SUPERCARRIER',         'RED',  'SEA',  'ENW',  0.12,   1,          ''),
             (   'ART_DEF_UNIT_SUPERCARRIER',        'ART_DEF_UNIT_MEMBER_SUPERCARRIER',         'RUG',  'SEA',  'ENW',  0.15,   1,          ''),
-            (   'ART_DEF_UNIT_SUPERCARRIER',        'ART_DEF_UNIT_MEMBER_SUPERCARRIER',         'SUG',  'SEA',  'ENW',  0.195,   1,          ''),
+            (   'ART_DEF_UNIT_SUPERCARRIER',        'ART_DEF_UNIT_MEMBER_SUPERCARRIER',         'SUG',  'SEA',  'ENW',  0.195,  1,          ''),
         --	ROCKET MISSILE
             (   'ART_DEF_UNIT_ROCKET_MISSILE',      'ART_DEF_UNIT_MEMBER_ROCKET_MISSILE',       'RED',  'AIR',  'ENW',  0.11,   1,          ''),
             (   'ART_DEF_UNIT_ROCKET_MISSILE',      'ART_DEF_UNIT_MEMBER_ROCKET_MISSILE',       'RUG',  'AIR',  'ENW',  0.20,   1,          ''),

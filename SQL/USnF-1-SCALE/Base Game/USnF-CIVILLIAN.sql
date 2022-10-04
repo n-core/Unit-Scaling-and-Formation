@@ -151,19 +151,19 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
         --  WORKER (EARLY)
             (   'ART_DEF_UNIT__WORKER',                     'ART_DEF_UNIT_MEMBER_WORKER_EURO',                  'RED',  'LAND', 0.09,   8,          'LooseCivilian'),
             (   'ART_DEF_UNIT__WORKER',                     'ART_DEF_UNIT_MEMBER_WORKER_EURO',                  'RUG',  'LAND', 0.18,   3,          'EarlyGreatArtistRUG'),
-            (   'ART_DEF_UNIT__WORKER',                     'ART_DEF_UNIT_MEMBER_WORKER_EURO',                  'SUG',  'LAND', 0.25,   3,          ''),
+            (   'ART_DEF_UNIT__WORKER',                     'ART_DEF_UNIT_MEMBER_WORKER_EURO',                  'SUG',  'LAND', 0.25,   1,          ''),
         --  WORKER (MODERN)
             (   'ART_DEF_UNIT__WORKER_MODERN',              'ART_DEF_UNIT_MEMBER_WORKER_EURO_LATE',             'RED',  'LAND', 0.09,   8,          'LooseCivilian'),
             (   'ART_DEF_UNIT__WORKER_MODERN',              'ART_DEF_UNIT_MEMBER_WORKER_EURO_LATE',             'RUG',  'LAND', 0.18,   3,          'EarlyGreatArtistRUG'),
-            (   'ART_DEF_UNIT__WORKER_MODERN',              'ART_DEF_UNIT_MEMBER_WORKER_EURO_LATE',             'SUG',  'LAND', 0.25,   3,          ''),
+            (   'ART_DEF_UNIT__WORKER_MODERN',              'ART_DEF_UNIT_MEMBER_WORKER_EURO_LATE',             'SUG',  'LAND', 0.25,   1,          ''),
         --  WORKBOAT (EARLY)
             (   'ART_DEF_UNIT_WORKBOAT',                    'ART_DEF_UNIT_MEMBER_WORKBOAT',                     'RED',  'SEA',  0.058,  3,          'Flotilla'),
             (   'ART_DEF_UNIT_WORKBOAT',                    'ART_DEF_UNIT_MEMBER_WORKBOAT',                     'RUG',  'SEA',  0.098,  2,          'ColombRUG'),
-            (   'ART_DEF_UNIT_WORKBOAT',                    'ART_DEF_UNIT_MEMBER_WORKBOAT',                     'SUG',  'SEA',  0.148,  2,          ''),
+            (   'ART_DEF_UNIT_WORKBOAT',                    'ART_DEF_UNIT_MEMBER_WORKBOAT',                     'SUG',  'SEA',  0.148,  1,          ''),
         --  WORKBOAT (INDUSTRIAL)
             (   'ART_DEF_UNIT_WORKBOAT_MODERN',             'ART_DEF_UNIT_MEMBER_WORKBOAT_INDUSTRIAL',          'RED',  'SEA',  0.065,  2,          'Flotilla'),
             (   'ART_DEF_UNIT_WORKBOAT_MODERN',             'ART_DEF_UNIT_MEMBER_WORKBOAT_INDUSTRIAL',          'RUG',  'SEA',  0.105,  2,          'NelsonRUG'),
-            (   'ART_DEF_UNIT_WORKBOAT_MODERN',             'ART_DEF_UNIT_MEMBER_WORKBOAT_INDUSTRIAL',          'SUG',  'SEA',  0.152,  2,          ''),
+            (   'ART_DEF_UNIT_WORKBOAT_MODERN',             'ART_DEF_UNIT_MEMBER_WORKBOAT_INDUSTRIAL',          'SUG',  'SEA',  0.152,  1,          ''),
         --  ARCHAEOLOGIST
             --RED
             (   'ART_DEF_UNIT_ARCHAEOLOGIST',               'ART_DEF_UNIT_MEMBER_ARCHAEOLOGIST',                'RED',  'LAND', 0.09,   1,          'GreatArtist'),
@@ -225,11 +225,11 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
         --  CARGO SHIP (EARLY)
             (   'ART_DEF_UNIT_CARGO_SHIP',                  'ART_DEF_UNIT_MEMBER_CARGO_SHIP',                   'RED',  'SEA',  0.085,  3,          'Flotilla'),
             (   'ART_DEF_UNIT_CARGO_SHIP',                  'ART_DEF_UNIT_MEMBER_CARGO_SHIP',                   'RUG',  'SEA',  0.17,   2,          'NelsonRUG'),
-            (   'ART_DEF_UNIT_CARGO_SHIP',                  'ART_DEF_UNIT_MEMBER_CARGO_SHIP',                   'SUG',  'SEA',  0.24,   2,          ''),
+            (   'ART_DEF_UNIT_CARGO_SHIP',                  'ART_DEF_UNIT_MEMBER_CARGO_SHIP',                   'SUG',  'SEA',  0.24,   1,          ''),
         --  CARGO SHIP (RENAISSANCE)
             (   'ART_DEF_UNIT_CARGO_SHIP_RENAISSANCE',      'ART_DEF_UNIT_MEMBER_CARGO_SHIP_MID',               'RED',  'SEA',  0.085,  3,          'Flotilla'),
             (   'ART_DEF_UNIT_CARGO_SHIP_RENAISSANCE',      'ART_DEF_UNIT_MEMBER_CARGO_SHIP_MID',               'RUG',  'SEA',  0.17,   2,          'NelsonRUG'),
-            (   'ART_DEF_UNIT_CARGO_SHIP_RENAISSANCE',      'ART_DEF_UNIT_MEMBER_CARGO_SHIP_MID',               'SUG',  'SEA',  0.235,  2,          ''),
+            (   'ART_DEF_UNIT_CARGO_SHIP_RENAISSANCE',      'ART_DEF_UNIT_MEMBER_CARGO_SHIP_MID',               'SUG',  'SEA',  0.235,  1,          ''),
         --  CARGO SHIP (MODERN)
             (   'ART_DEF_UNIT_CARGO_SHIP_MODERN',           'ART_DEF_UNIT_MEMBER_CARGO_SHIP_LATE',              'RED',  'SEA',  0.08,   1,          'DefaultCavalry'),
             (   'ART_DEF_UNIT_CARGO_SHIP_MODERN',           'ART_DEF_UNIT_MEMBER_CARGO_SHIP_LATE',              'RUG',  'SEA',  0.105,  1,          'DefaultCavalryRUG'),
