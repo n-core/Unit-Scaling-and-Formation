@@ -142,7 +142,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_'||'LONGSWORDSMAN',       'ART_DEF_UNIT_MEMBER_'||'LONGSWORDSMAN',        'RUG',  'LAND', 0.18,   3,          'DefaultMeleeRUG'),
             (   'ART_DEF_UNIT_'||'LONGSWORDSMAN',       'ART_DEF_UNIT_MEMBER_'||'LONGSWORDSMAN',        'SUG',  'LAND', 0.25,   1,          ''),
         --	PIKEMAN
-            (   'ART_DEF_UNIT_'||'PIKEMAN',             'ART_DEF_UNIT_MEMBER_'||'PIKEMAN',              'RED',  'LAND', 0.19,   16,         'PikemanRED'),
+            (   'ART_DEF_UNIT_'||'PIKEMAN',             'ART_DEF_UNIT_MEMBER_'||'PIKEMAN',              'RED',  'LAND', 0.09,   16,         'PikemanRED'),
             (   'ART_DEF_UNIT_'||'PIKEMAN',             'ART_DEF_UNIT_MEMBER_'||'PIKEMAN',              'RUG',  'LAND', 0.18,   3,          'PikemanRUG'),
             (   'ART_DEF_UNIT_'||'PIKEMAN',             'ART_DEF_UNIT_MEMBER_'||'PIKEMAN',              'SUG',  'LAND', 0.25,   1,          ''),
         --	TREBUCHET
