@@ -4,7 +4,7 @@
     ArtDefine configuration file
     by N.Core
 
-    For all base Civillian & Special units.
+    For all base Civilian & Special units.
 
     Note for inserting into ArtDefine_UnitInfoMemberInfos:
     To adjust what kind of UnitMemberInfo model you want to use for a UnitInfo,
@@ -17,7 +17,7 @@
 
 INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF_Domain, USnF_Scale, USnF_NumMembers, USnF_Formation) VALUES
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---  Civillian & Special UnitS
+--  Civilian & Special UnitS
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  SETTLING UNITS
         ------- UnitInfo ---------------------------------- UnitMemberInfo ------------------------------------ Type -- Domain  Scale - NumMembers  Formation -------------------

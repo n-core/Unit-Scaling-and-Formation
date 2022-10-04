@@ -310,7 +310,7 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>SQL/USnF-1-SCALE/Base Game/USnF-CIVILLIAN.sql</FileName>
+        <FileName>SQL/USnF-1-SCALE/Base Game/USnF-CIVILIAN.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -620,7 +620,7 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="SQL\USnF-1-SCALE\Base Game\USnF-CIVILLIAN.sql">
+    <Content Include="SQL\USnF-1-SCALE\Base Game\USnF-CIVILIAN.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
