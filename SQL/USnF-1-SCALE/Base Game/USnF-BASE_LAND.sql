@@ -20,50 +20,50 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
 --  Land Military Units
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  ANCIENT ERA
-        ------- UnitInfo -------------------------- UnitMemberInfo ------------------------ Type -- Domain  Scale - NumMembers  Formation ---------------------------------------
+        ------- UnitInfo -------------------------- UnitMemberInfo ---------------------------- Type -- Domain  Scale - NumMembers  Formation -----------------------------------
         --  ARCHER
             --RED
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V2',        'RED',  'LAND', 0.09,   3,          'ArcherRED'),
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V3',        'RED',  'LAND', 0.09,   1,          'ArcherRED'),
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER',           'RED',  'LAND', 0.09,   2,          'ArcherRED'),
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V2',        'RED',  'LAND', 0.09,   2,          'ArcherRED'),
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER',           'RED',  'LAND', 0.09,   1,          'ArcherRED'),
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V3',        'RED',  'LAND', 0.09,   3,          'ArcherRED'),
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V2',        'RED',  'LAND', 0.09,   1,          'ArcherRED'),
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER',           'RED',  'LAND', 0.09,   2,          'ArcherRED'),
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V3',        'RED',  'LAND', 0.09,   1,          'ArcherRED'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V2',            'RED',  'LAND', 0.09,   3,          'ArcherRED'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V3',            'RED',  'LAND', 0.09,   1,          'ArcherRED'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER',               'RED',  'LAND', 0.09,   2,          'ArcherRED'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V2',            'RED',  'LAND', 0.09,   2,          'ArcherRED'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER',               'RED',  'LAND', 0.09,   1,          'ArcherRED'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V3',            'RED',  'LAND', 0.09,   3,          'ArcherRED'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V2',            'RED',  'LAND', 0.09,   1,          'ArcherRED'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER',               'RED',  'LAND', 0.09,   2,          'ArcherRED'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V3',            'RED',  'LAND', 0.09,   1,          'ArcherRED'),
             --RUG
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V2',        'RUG',  'LAND', 0.18,   1,          'ArcherRUG'),
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER',           'RUG',  'LAND', 0.18,   1,          'ArcherRUG'),
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V3',        'RUG',  'LAND', 0.18,   1,          'ArcherRUG'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V2',            'RUG',  'LAND', 0.18,   1,          'ArcherRUG'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER',               'RUG',  'LAND', 0.18,   1,          'ArcherRUG'),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V3',            'RUG',  'LAND', 0.18,   1,          'ArcherRUG'),
             --SUG
-            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER',           'SUG',  'LAND', 0.25,   1,          ''),
-            --(   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V2',        'SUG',  'LAND', 0.25,   1,          ''),
-            --(   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V3',        'SUG',  'LAND', 0.25,   1,          ''),
+            (   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER',               'SUG',  'LAND', 0.25,   1,          ''),
+            --(   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V2',            'SUG',  'LAND', 0.25,   1,          ''),
+            --(   'ART_DEF_UNIT_ARCHER',              'ART_DEF_UNIT_MEMBER_ARCHER_V3',            'SUG',  'LAND', 0.25,   1,          ''),
         --  WARRIOR
             --RED
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',          'RED',  'LAND', 0.09,   2,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',       'RED',  'LAND', 0.09,   2,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',       'RED',  'LAND', 0.09,   1,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',          'RED',  'LAND', 0.09,   2,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',       'RED',  'LAND', 0.09,   2,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',          'RED',  'LAND', 0.09,   1,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',       'RED',  'LAND', 0.09,   2,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',          'RED',  'LAND', 0.09,   1,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',       'RED',  'LAND', 0.09,   2,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',       'RED',  'LAND', 0.09,   1,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',          'RED',  'LAND', 0.09,   1,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',       'RED',  'LAND', 0.09,   1,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',          'RED',  'LAND', 0.09,   1,          'WarriorRED'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',       'RED',  'LAND', 0.09,   1,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',              'RED',  'LAND', 0.09,   2,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',           'RED',  'LAND', 0.09,   2,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',           'RED',  'LAND', 0.09,   1,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',              'RED',  'LAND', 0.09,   2,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',           'RED',  'LAND', 0.09,   2,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',              'RED',  'LAND', 0.09,   1,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',           'RED',  'LAND', 0.09,   2,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',              'RED',  'LAND', 0.09,   1,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',           'RED',  'LAND', 0.09,   2,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',           'RED',  'LAND', 0.09,   1,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',              'RED',  'LAND', 0.09,   1,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',           'RED',  'LAND', 0.09,   1,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',              'RED',  'LAND', 0.09,   1,          'WarriorRED'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',           'RED',  'LAND', 0.09,   1,          'WarriorRED'),
             --RUG
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',       'RUG',  'LAND', 0.18,   1,          'WarriorRUG'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',          'RUG',  'LAND', 0.18,   1,          'WarriorRUG'),
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',       'RUG',  'LAND', 0.18,   1,          'WarriorRUG'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',           'RUG',  'LAND', 0.18,   1,          'WarriorRUG'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',              'RUG',  'LAND', 0.18,   1,          'WarriorRUG'),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',           'RUG',  'LAND', 0.18,   1,          'WarriorRUG'),
             --SUG
-            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',          'SUG',  'LAND', 0.25,   1,          ''),
-            --(   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',       'SUG',  'LAND', 0.25,   1,          ''),
-            --(   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',       'SUG',  'LAND', 0.25,   1,          ''),
+            (   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR',              'SUG',  'LAND', 0.25,   1,          ''),
+            --(   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V2',           'SUG',  'LAND', 0.25,   1,          ''),
+            --(   'ART_DEF_UNIT__WARRIOR',            'ART_DEF_UNIT_MEMBER_WARRIOR_V4',           'SUG',  'LAND', 0.25,   1,          ''),
         --  CHARIOT ARCHER
             (   'ART_DEF_UNIT_CHARIOT_ARCHER',      'ART_DEF_UNIT_MEMBER_CHARIOTARCHER',        'RED',  'LAND', 0.085,  3,          'ChariotElephantRED'),
             (   'ART_DEF_UNIT_CHARIOT_ARCHER',      'ART_DEF_UNIT_MEMBER_CHARIOTARCHER',        'RUG',  'LAND', 0.17,   2,          'ChariotElephantRUG'),
@@ -78,26 +78,26 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_SCOUT',               'ART_DEF_UNIT_MEMBER_SCOUT',                'SUG',  'LAND', 0.25,   1,          ''),
         --	SPEARMAN
             --RED
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V2',      'RED',  'LAND', 0.09,   3,          'PhalanxRED'),
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN',        'RED',  'LAND', 0.09,   2,          'PhalanxRED'),
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V3',      'RED',  'LAND', 0.09,   2,          'PhalanxRED'),
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V2',      'RED',  'LAND', 0.09,   1,          'PhalanxRED'),
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN',         'RED',  'LAND', 0.09,   2,          'PhalanxRED'),
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V3',      'RED',  'LAND', 0.09,   1,          'PhalanxRED'),
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN',         'RED',  'LAND', 0.09,   4,          'PhalanxRED'),
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V2',      'RED',  'LAND', 0.09,   2,          'PhalanxRED'),
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V3',      'RED',  'LAND', 0.09,   3,          'PhalanxRED'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V2',          'RED',  'LAND', 0.09,   3,          'PhalanxRED'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN',             'RED',  'LAND', 0.09,   2,          'PhalanxRED'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V3',          'RED',  'LAND', 0.09,   2,          'PhalanxRED'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V2',          'RED',  'LAND', 0.09,   1,          'PhalanxRED'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN',             'RED',  'LAND', 0.09,   2,          'PhalanxRED'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V3',          'RED',  'LAND', 0.09,   1,          'PhalanxRED'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN',             'RED',  'LAND', 0.09,   4,          'PhalanxRED'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V2',          'RED',  'LAND', 0.09,   2,          'PhalanxRED'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V3',          'RED',  'LAND', 0.09,   3,          'PhalanxRED'),
             --RUG
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V2',      'RUG',  'LAND', 0.18,   1,          'PhalanxRUG'),
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN',        'RUG',  'LAND', 0.18,   1,          'PhalanxRUG'),
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V3',      'RUG',  'LAND', 0.18,   1,          'PhalanxRUG'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V2',          'RUG',  'LAND', 0.18,   1,          'PhalanxRUG'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN',             'RUG',  'LAND', 0.18,   1,          'PhalanxRUG'),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V3',          'RUG',  'LAND', 0.18,   1,          'PhalanxRUG'),
             --SUG
-            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN',         'SUG',  'LAND', 0.25,   1,          ''),
-            --(   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V2',      'SUG',  'LAND', 0.25,   1,          ''),
-            --(   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V3',      'SUG',  'LAND', 0.25,   1,          ''),
+            (   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN',             'SUG',  'LAND', 0.25,   1,          ''),
+            --(   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V2',          'SUG',  'LAND', 0.25,   1,          ''),
+            --(   'ART_DEF_UNIT_SPEARMAN',            'ART_DEF_UNIT_MEMBER_SPEARMAN_V3',          'SUG',  'LAND', 0.25,   1,          ''),
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  CLASSICAL ERA
-        ------- UnitInfo ------------------------------ UnitMemberInfo -------------------------------- Type -- Domain  Scale - NumMembers  Formation ---------------------------
+        ------- UnitInfo -------------------------- UnitMemberInfo ---------------------------- Type -- Domain  Scale - NumMembers  Formation -----------------------------------
         --	CATAPULT
             (   'ART_DEF_UNIT_CATAPULT',            'ART_DEF_UNIT_MEMBER_CATAPULT',             'RED',  'LAND', 0.09,   4,          'ThreeBigGuns'),
             (   'ART_DEF_UNIT_CATAPULT',            'ART_DEF_UNIT_MEMBER_CATAPULT',             'RUG',  'LAND', 0.17,   2,          'TwoBigGunsRUG'),
@@ -108,27 +108,27 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_COMPOSITE_BOWMAN',    'ART_DEF_UNIT_MEMBER_COMPOSITE_BOWMAN',     'SUG',  'LAND', 0.25,   1,          ''),
         --	SWORDSMAN
             --RED
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V2',     'RED',  'LAND', 0.09,   2,          'DefaultMeleeRED'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',        'RED',  'LAND', 0.09,   1,          'DefaultMeleeRED'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V3',     'RED',  'LAND', 0.09,   2,          'DefaultMeleeRED'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V2',     'RED',  'LAND', 0.09,   2,          'DefaultMeleeRED'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',        'RED',  'LAND', 0.09,   3,          'DefaultMeleeRED'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V3',     'RED',  'LAND', 0.09,   2,          'DefaultMeleeRED'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V2',     'RED',  'LAND', 0.09,   1,          'DefaultMeleeRED'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',        'RED',  'LAND', 0.09,   1,          'DefaultMeleeRED'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V3',     'RED',  'LAND', 0.09,   1,          'DefaultMeleeRED'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',        'RED',  'LAND', 0.09,   1,          'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V2',         'RED',  'LAND', 0.09,   2,          'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',            'RED',  'LAND', 0.09,   1,          'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V3',         'RED',  'LAND', 0.09,   2,          'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V2',         'RED',  'LAND', 0.09,   2,          'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',            'RED',  'LAND', 0.09,   3,          'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V3',         'RED',  'LAND', 0.09,   2,          'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V2',         'RED',  'LAND', 0.09,   1,          'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',            'RED',  'LAND', 0.09,   1,          'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V3',         'RED',  'LAND', 0.09,   1,          'DefaultMeleeRED'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',            'RED',  'LAND', 0.09,   1,          'DefaultMeleeRED'),
             --RUG
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V2',     'RUG',  'LAND', 0.18,   1,          'DefaultMeleeRUG'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',        'RUG',  'LAND', 0.18,   1,          'DefaultMeleeRUG'),
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V3',     'RUG',  'LAND', 0.18,   1,          'DefaultMeleeRUG'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V2',         'RUG',  'LAND', 0.18,   1,          'DefaultMeleeRUG'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',            'RUG',  'LAND', 0.18,   1,          'DefaultMeleeRUG'),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V3',         'RUG',  'LAND', 0.18,   1,          'DefaultMeleeRUG'),
             --SUG
-            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',        'SUG',  'LAND', 0.25,   1,          ''),
-            --(   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V2',     'SUG',  'LAND', 0.25,   1,          ''),
-            --(   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V3',     'SUG',  'LAND', 0.25,   1,          ''),
+            (   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN',            'SUG',  'LAND', 0.25,   1,          ''),
+            --(   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V2',         'SUG',  'LAND', 0.25,   1,          ''),
+            --(   'ART_DEF_UNIT_SWORDSMAN',           'ART_DEF_UNIT_MEMBER_SWORDSMAN_V3',         'SUG',  'LAND', 0.25,   1,          ''),
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  MEDIEVAL ERA
-        ------- UnitInfo ------------------------------ UnitMemberInfo -------------------------------- Type -- Domain  Scale - NumMembers  Formation ---------------------------
+        ------- UnitInfo -------------------------- UnitMemberInfo ---------------------------- Type -- Domain  Scale - NumMembers  Formation -----------------------------------
         --	CROSSBOWMAN
             (   'ART_DEF_UNIT_CROSSBOWMAN',         'ART_DEF_UNIT_MEMBER_CROSSBOWMAN',          'RED',  'LAND', 0.09,   15,         'Crossbowman'),
             (   'ART_DEF_UNIT_CROSSBOWMAN',         'ART_DEF_UNIT_MEMBER_CROSSBOWMAN',          'RUG',  'LAND', 0.18,   3,          'CrossbowmanRUG'),
@@ -151,7 +151,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_TREBUCHET',           'ART_DEF_UNIT_MEMBER_TREBUCHET',            'SUG',  'LAND', 0.24,   1,          ''),
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  RENAISSANCE ERA
-        ------- UnitInfo ------------------------------ UnitMemberInfo -------------------------------- Type -- Domain  Scale - NumMembers  Formation ---------------------------
+        ------- UnitInfo -------------------------- UnitMemberInfo ---------------------------- Type -- Domain  Scale - NumMembers  Formation -----------------------------------
         --	CANNON
             (   'ART_DEF_UNIT_CANNON',              'ART_DEF_UNIT_MEMBER_CANNON',               'RED',  'LAND', 0.09,   3,          'CannonLine'),
             (   'ART_DEF_UNIT_CANNON',              'ART_DEF_UNIT_MEMBER_CANNON',               'RUG',  'LAND', 0.175,  2,          'TwoBigGunsRUG'),
@@ -181,7 +181,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_GATLINGGUN',          'ART_DEF_UNIT_MEMBER_GATLINGGUN',           'SUG',  'LAND', 0.25,   1,          ''),
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  MODERN ERA
-        ------- UnitInfo ------------------------------ UnitMemberInfo -------------------------------- Type -- Domain  Scale - NumMembers  Formation ---------------------------
+        ------- UnitInfo -------------------------- UnitMemberInfo ---------------------------- Type -- Domain  Scale - NumMembers  Formation -----------------------------------
         --	ANTI-AIRCRAFT GUN
             (   'ART_DEF_UNIT_ANTI_AIRCRAFT_GUN',   'ART_DEF_UNIT_MEMBER_ANTIAIRCRAFTGUN',      'RED',  'LAND', 0.09,   4,          'FourBigGuns'),
             (   'ART_DEF_UNIT_ANTI_AIRCRAFT_GUN',   'ART_DEF_UNIT_MEMBER_ANTIAIRCRAFTGUN',      'RUG',  'LAND', 0.17,   2,          'TwoBigGunsRUG'),
@@ -208,7 +208,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_WW1_INFANTRY',        'ART_DEF_UNIT_MEMBER_WW1_INFANTRY',         'SUG',  'LAND', 0.25,   1,          ''),
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  ATOMIC ERA
-        ------- UnitInfo ------------------------------ UnitMemberInfo -------------------------------- Type -- Domain  Scale - NumMembers  Formation ---------------------------
+        ------- UnitInfo -------------------------- UnitMemberInfo ---------------------------- Type -- Domain  Scale - NumMembers  Formation -----------------------------------
         --	INFANTRY
             --WW2_INFANTRY model from Gods & Kings DLC
             (   'ART_DEF_UNIT_WW2_INFANTRY',        'ART_DEF_UNIT_MEMBER_WW2_INFANTRY',         'RED',  'LAND', 0.09,   18,         'UnFormedRED'),
@@ -232,7 +232,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_TANK',                'ART_DEF_UNIT_MEMBER_TANK',                 'SUG',  'LAND', 0.253,  1,          ''),
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  INFORMATION ERA
-        ------- UnitInfo ------------------------------ UnitMemberInfo -------------------------------- Type -- Domain  Scale - NumMembers  Formation ---------------------------
+        ------- UnitInfo -------------------------- UnitMemberInfo ---------------------------- Type -- Domain  Scale - NumMembers  Formation -----------------------------------
         --	BAZOOKA
             (   'ART_DEF_UNIT_BAZOOKA_INFANTRY',    'ART_DEF_UNIT_MEMBER_BAZOOKA_INFANTRY',     'RED',  'LAND', 0.085,  5,          'FiveBigGuns'),
             (   'ART_DEF_UNIT_BAZOOKA_INFANTRY',    'ART_DEF_UNIT_MEMBER_BAZOOKA_INFANTRY',     'RUG',  'LAND', 0.18,   2,          'VehicleRUG'),
