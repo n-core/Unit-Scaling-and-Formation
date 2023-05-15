@@ -5,7 +5,7 @@
     <ProjectGuid>{e4f7f493-303d-4493-a73c-10faef33d01b}</ProjectGuid>
     <Name>(visual) Unit Scaling and Formation for VP</Name>
     <Guid>9f801bd1-a762-4fa6-b2d0-b3245c8fb464</Guid>
-    <ModVersion>8</ModVersion>
+    <ModVersion>12</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>This mod affects the visual scale and formation of units in gameplay.</Teaser>
     <Description>This mod affects the visual scale and formation of units in gameplay.

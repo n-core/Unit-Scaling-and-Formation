@@ -26,7 +26,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_'||'SMAN_DOB_BRETON_KNIGHT',      'ART_DEF_UNIT_MEMBER_'||'DOB_BRETON_KNIGHT',            'RUG',  'SEA',  'BrittanyVP',   0.17,   3,          'DefaultCavalryRUG'),
             (   'ART_DEF_UNIT_'||'SMAN_DOB_BRETON_KNIGHT',      'ART_DEF_UNIT_MEMBER_'||'DOB_BRETON_KNIGHT',            'SUG',  'SEA',  'BrittanyVP',   0.24,   1,          ''),
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---  END OF INSERT 
+--  END OF INSERT
 
             (   'END_OF_INSERT', '', '', NULL, NULL, 0, 0, '');
 
@@ -39,7 +39,7 @@ SELECT 'BrittanyVP' WHERE EXISTS (SELECT * FROM Units WHERE Type = 'UNIT_SMAN_DO
 --  SMAN's Duchy of Brittany - Anne De Bretagne for VP - Ethnic Units
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---Let's add the missing WW2_INFANTRY (Great War Infantry) ethnic model
+--Let's add the missing WW2_INFANTRY (Infantry) ethnic model
 INSERT INTO ArtDefine_UnitInfos (Type, DamageStates, Formation)
 SELECT 'ART_DEF_UNIT_WW2_INFANTRY_BRITTANY', DamageStates, Formation
 FROM ArtDefine_UnitInfos WHERE Type = 'ART_DEF_UNIT_WW2_INFANTRY';

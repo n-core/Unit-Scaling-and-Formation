@@ -43,6 +43,10 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             --(   'ART_DEF_UNIT_EE_EXPLORER',         'ART_DEF_UNIT_MEMBER_EE_EXPLORER_2',        'SUG',  'LAND', 'EEVP', 0.25,   1,          ''),
             --(   'ART_DEF_UNIT_EE_EXPLORER',         'ART_DEF_UNIT_MEMBER_EE_EXPLORER_3',        'SUG',  'LAND', 'EEVP', 0.25,   1,          ''),
             (   'ART_DEF_UNIT_EE_EXPLORER',         'ART_DEF_UNIT_MEMBER_EE_EXPLORER_4',        'SUG',  'LAND', 'EEVP', 0.25,   1,          ''),
+        --  DRAGOON
+            (   'ART_DEF_UNIT_EE_DRAGOON',          'ART_DEF_UNIT_MEMBER_EE_DRAGOON',           'RED',  'LAND', 'EEVP', 0.085,  7,          'DefaultCavalry'),
+            (   'ART_DEF_UNIT_EE_DRAGOON',          'ART_DEF_UNIT_MEMBER_EE_DRAGOON',           'RUG',  'LAND', 'EEVP', 0.17,   3,          'DefaultCavalryRUG'),
+            (   'ART_DEF_UNIT_EE_DRAGOON',          'ART_DEF_UNIT_MEMBER_EE_DRAGOON',           'SUG',  'LAND', 'EEVP', 0.24,   1,          ''),
         --  FIELD GUN [EE]
             (   'ART_DEF_UNIT_EE_FIELD_GUN',        'ART_DEF_UNIT_MEMBER_EE_FIELD_GUN',         'RED',  'LAND', 'EEVP', 0.09,   3,          'CannonLine'),
             (   'ART_DEF_UNIT_EE_FIELD_GUN',        'ART_DEF_UNIT_MEMBER_EE_FIELD_GUN',         'RUG',  'LAND', 'EEVP', 0.175,  2,          'TwoBigGunsRUG'),
@@ -82,7 +86,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_EE_SHIP_OF_THE_LINE', 'ART_DEF_UNIT_MEMBER_EE_SHIP_OF_THE_LINE',  'RUG',  'SEA',  'EEVP', 0.165,  1,          ''),
             (   'ART_DEF_UNIT_EE_SHIP_OF_THE_LINE', 'ART_DEF_UNIT_MEMBER_EE_SHIP_OF_THE_LINE',  'SUG',  'SEA',  'EEVP', 0.235,  1,          ''),
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---  END OF INSERT 
+--  END OF INSERT
 
             (   'END_OF_INSERT', '', '', NULL, NULL, 0, 0, '');
 

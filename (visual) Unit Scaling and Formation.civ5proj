@@ -5,7 +5,7 @@
     <ProjectGuid>{e4f7f493-303d-4493-a73c-10faef33d01b}</ProjectGuid>
     <Name>(visual) Unit Scaling and Formation</Name>
     <Guid>9f801bd1-a762-4fa6-b2d0-b3245c8fb464</Guid>
-    <ModVersion>9</ModVersion>
+    <ModVersion>11</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>This mod affects the visual scale and formation of units in gameplay.</Teaser>
     <Description>This mod affects the visual scale and formation of units in gameplay.
@@ -16,7 +16,7 @@
 [NEWLINE][ICON_BULLET] Reduced Unit Graphics
 [NEWLINE][ICON_BULLET] Single Unit Graphics
 [NEWLINE]
-[NEWLINE]This is the base version of the mod that requires all DLCs in order to run properly. You can make make some adjustments yourself (if you don't have some of the DLCs) by editing the SQL files. 
+[NEWLINE]This is the base version of the mod that requires all DLCs in order to run properly. You can make make some adjustments yourself (if you don't have some of the DLCs) by editing the SQL files.
 [NEWLINE]To support other mods, you need to enable the additional support files to make custom units compatible with this mod.
 [NEWLINE]
 [NEWLINE]You can choose which type of scaling you want by editing the [COLOR:160:170:180:255]USnF-Config.sql[ENDCOLOR] file.

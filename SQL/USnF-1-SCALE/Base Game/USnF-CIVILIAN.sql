@@ -17,7 +17,7 @@
 
 INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF_Domain, USnF_Scale, USnF_NumMembers, USnF_Formation) VALUES
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---  Civilian & Special UnitS
+--  Civilian & Special Units
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  SETTLING UNITS
         ------- UnitInfo ---------------------------------- UnitMemberInfo ------------------------------------ Type -- Domain  Scale - NumMembers  Formation -------------------

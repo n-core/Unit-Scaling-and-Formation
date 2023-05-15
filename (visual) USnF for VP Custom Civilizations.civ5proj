@@ -5,7 +5,7 @@
     <ProjectGuid>{6e91f789-ec7f-404f-8cd0-d26f647e5776}</ProjectGuid>
     <Name>(visual) USnF for VP Custom Civilizations</Name>
     <Guid>6c2985af-6d9e-4db8-b04e-8a3394ce1c6d</Guid>
-    <ModVersion>6</ModVersion>
+    <ModVersion>7</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>This mod adds USnF support for additional units from custom civilizations for [COLOR:250:220:30:255]Vox Populi[ENDCOLOR].</Teaser>
     <Description>This mod adds USnF support for additional units from custom civilizations for [COLOR:250:220:30:255]Vox Populi[ENDCOLOR].
@@ -254,6 +254,34 @@
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>GH's Catalonia - Guifré el Pelut for VP</Name>
+        <Id>4715ae5a-0e9a-4389-aee2-fad418573ccd</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>JFD-US-DMS-THP-GH's Ireland - Brian Boru for VP</Name>
+        <Id>5bc5cebf-f7fc-4cf7-8669-726e58ad476e</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Jarcast's The Etruscans for VP</Name>
+        <Id>6031eb42-9188-464c-9c75-1e5856c252b2</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Jarcast's Nan Madol for VP</Name>
+        <Id>8e97b90f-bd6f-4139-9f22-8cca9a9d6931</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
     </ModReferences>
     <ReloadUnitSystem>true</ReloadUnitSystem>
     <ModDependencies>
@@ -299,6 +327,16 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-GH_CataloniaVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-GH_IrelandVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-GH_LouisianaVP.sql</FileName>
       </Action>
       <Action>
@@ -325,6 +363,16 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-InkAxis_KushanVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Jarcast_EtruscansVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>SQL/USnF-1-SCALE/VP Custom Civilizations/USnF-Jarcast_NanMadolVP.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -464,6 +512,14 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-GH_CataloniaVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-GH_IrelandVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-GH_LouisianaVP.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -485,6 +541,14 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-InkAxis_KushanVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Jarcast_EtruscansVP.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\USnF-1-SCALE\VP Custom Civilizations\USnF-Jarcast_NanMadolVP.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

@@ -100,7 +100,7 @@ Description:
         so it will apply to all units listed on ArtDefine_USnF table.
 
     NOTE:   If you choose per-unit domain or global scaling multiplier, then you have to set scaling multiplier value below.
-            Also per-unit scaling multiplier won't apply, even if you set it manually.
+            Also per-unit scaling multiplier won't apply even if you set it manually, since the trigger will override all scale multiplier values.
 
 There are:
 0 = Disabled
@@ -118,17 +118,17 @@ WHERE EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SCALEMULT' AND (Value
 ---------------------------------------------------------------------------------------
 -------------------------- PER-UNIT DOMAIN SCALING MULTIPLIER -------------------------
 --Scaling multiplier for land units
-UPDATE ArtDefine_USnFScaleMultiplier SET USnF_ScaleMultiplier = 1.15 --set your multiplier value
+UPDATE ArtDefine_USnFScaleMultiplier SET USnF_ScaleMultiplier = 1.00 --set your multiplier value
 WHERE EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SCALEMULT' AND (Value = 2))
 AND USnF_Domain = 'LAND';
 
 --Scaling multiplier for sea units
-UPDATE ArtDefine_USnFScaleMultiplier SET USnF_ScaleMultiplier = 1.10 --set your multiplier value
+UPDATE ArtDefine_USnFScaleMultiplier SET USnF_ScaleMultiplier = 1.00 --set your multiplier value
 WHERE EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SCALEMULT' AND (Value = 2))
 AND USnF_Domain = 'SEA';
 
 --Scaling multiplier for air units
-UPDATE ArtDefine_USnFScaleMultiplier SET USnF_ScaleMultiplier = 1.05 --set your multiplier value
+UPDATE ArtDefine_USnFScaleMultiplier SET USnF_ScaleMultiplier = 1.00 --set your multiplier value
 WHERE EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_SCALEMULT' AND (Value = 2))
 AND USnF_Domain = 'AIR';
 ---------------------------------------------------------------------------------------

@@ -112,7 +112,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  MEDIEVAL ERA
         ------- UnitInfo ---------------------------------- UnitMemberInfo ------------------------------------ Type -- Domain  ModMod  Scale - NumMembers  Formation -----------
-        --  BRAZIL'S' BANDEIRANTES
+        --  BRAZIL'S BANDEIRANTES
             --RED: 1ST ROW - 3 Members (Wedge: Center-Left-Right)
             (   'ART_DEF_UNIT_BANDEIRANTES',                'ART_DEF_UNIT_MEMBER_BANDEIRANTE_1',                'RED',  'LAND', 'VP',   0.082,  1,          'WedgeSoldier'),
             (   'ART_DEF_UNIT_BANDEIRANTES',                'ART_DEF_UNIT_MEMBER_BANDEIRANTE_3',                'RED',  'LAND', 'VP',   0.082,  2,          'WedgeSoldier'),
@@ -192,7 +192,7 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_CUIRASSIER',                  'ART_DEF_UNIT_MEMBER_CUIRASSIER',                   'RED',  'LAND', 'VP',   0.085,  7,          'DefaultCavalry'),
             (   'ART_DEF_UNIT_CUIRASSIER',                  'ART_DEF_UNIT_MEMBER_CUIRASSIER',                   'RUG',  'LAND', 'VP',   0.17,   3,          'DefaultCavalryRUG'),
             (   'ART_DEF_UNIT_CUIRASSIER',                  'ART_DEF_UNIT_MEMBER_CUIRASSIER',                   'SUG',  'LAND', 'VP',   0.24,   1,          ''),
-        --  LANDSKNECHT (VP)
+        --  GERMANY'S LANDSKNECHT (VP)
             --RED: 1ST ROW - 9 Members (Flat: 1stCenter-2ndCenterL-2ndCenterR-1stMiddleL-1stMiddleR-2ndMiddleL-2ndMiddleR-OuterL-OuterR)
             (   'ART_DEF_UNIT_U_GERMAN_LANDSKNECHT',        'ART_DEF_UNIT_MEMBER_U_GERMAN_LANDSKNECHT_A',       'RED',  'LAND', 'VP',   0.09,   1,          'Tercio'),
             (   'ART_DEF_UNIT_U_GERMAN_LANDSKNECHT',        'ART_DEF_UNIT_MEMBER_U_GERMAN_LANDSKNECHT_B',       'RED',  'LAND', 'VP',   0.09,   2,          'Tercio'),
@@ -298,6 +298,7 @@ DELETE  FROM ArtDefine_USnF WHERE USnF_UnitInfo = 'END_OF_INSERT';
 -- Change the donkey model to human model.
 UPDATE ArtDefine_USnF SET USnF_UnitMemberInfo = 'ART_DEF_UNIT_MEMBER_GREAT_EXPLORER_F1'
 WHERE USnF_UnitMemberInfo = 'ART_DEF_UNIT_MEMBER_GREAT_EXPLORER_F2'
+AND EXISTS (SELECT * FROM ArtDefine_USnF WHERE USnF_UnitMemberInfo = 'ART_DEF_UNIT_MEMBER_GREAT_EXPLORER_F2')
 AND EXISTS (SELECT * FROM USnF_Config WHERE Type = 'USnF_AFRICAEXPLORER' AND Value = 1); 
 
 --  Add support for Vox Populi

@@ -173,12 +173,6 @@ INSERT  INTO ArtDefine_USnF (USnF_UnitInfo, USnF_UnitMemberInfo, USnF_Type, USnF
             (   'ART_DEF_UNIT_DJONG',                           'ART_DEF_UNIT_MEMBER_DJONG',                            'RED',  'SEA',  'MUCfVP',   0.083,  3,          'Nelson'),
             (   'ART_DEF_UNIT_DJONG',                           'ART_DEF_UNIT_MEMBER_DJONG',                            'RUG',  'SEA',  'MUCfVP',   0.155,  1,          ''),
             (   'ART_DEF_UNIT_DJONG',                           'ART_DEF_UNIT_MEMBER_DJONG',                            'SUG',  'SEA',  'MUCfVP',   0.2,    1,          ''),
-        --  PRAU [MUCfVP]
-            --MUCfVP used to have Prau as a UU for Indonesia, but then replaced it with Djong instead
-            --You can put it into the game manually by editing the code and adding text manually into that mod
-            (   'ART_DEF_UNIT_INDONESIA_PRAU',                  'ART_DEF_UNIT_MEMBER_INDONESIA_PRAU',                   'RED',  'SEA',  'MUCfVP',   0.12,   3,          'Flotilla'),
-            (   'ART_DEF_UNIT_INDONESIA_PRAU',                  'ART_DEF_UNIT_MEMBER_INDONESIA_PRAU',                   'RUG',  'SEA',  'MUCfVP',   0.202,  1,          ''),
-            (   'ART_DEF_UNIT_INDONESIA_PRAU',                  'ART_DEF_UNIT_MEMBER_INDONESIA_PRAU',                   'SUG',  'SEA',  'MUCfVP',   0.275,  1,          ''),
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     --  IROQUOIS
         ------- UnitInfo -------------------------------------- UnitMemberInfo ---------------------------------------- Type -- Domain  ModMod ---- Scale - NumMembers  Formation

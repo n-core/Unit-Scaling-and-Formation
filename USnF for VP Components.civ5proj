@@ -5,7 +5,7 @@
     <ProjectGuid>{f7634d81-5518-45d5-a686-6ecc50b5a0ec}</ProjectGuid>
     <Name>(visual) USnF for VP Components</Name>
     <Guid>a558047c-e8eb-4084-b30b-e6c7fb3d47ae</Guid>
-    <ModVersion>1</ModVersion>
+    <ModVersion>2</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>This mod adds USnF support for Vox Populi.</Teaser>
     <Description>This mod adds USnF support for Vox Populi.
